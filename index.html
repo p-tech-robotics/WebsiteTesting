@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<html>
 <head>
+	<h1>Pumatech Robotics</h1>
 	<nav>
   		<ul>
     			<li><strong>Home</strong></li>
@@ -7,10 +9,17 @@
     			<li><a href="BecomeaSponsor.html">Become a Sponsor</a></li>
     			<li><a href="OurRobots.html">Robot Showcase</a></li>
     			<li><a href="ContactUs.html">Contact Us</a></li>
-
   		</ul>
 	</nav>
   <style>
+	* {
+  		box-sizing: border-box;
+	}
+	.column {
+  		float: left;
+  		width: 33.33%;
+  		padding: 5px;
+	}
   	.pinlogo {
   		display: block;
   		margin-left: auto;
@@ -18,14 +27,41 @@
 		height: 50%;
   		width: 50%;
 	}
-    h1 {
-    	text-align: center;
-    }
+	.amacalogo {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+		height: 50%;
+  		width: 50%;
+	}
+	.nasalogo{
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+		height: 50%;
+  		width: 50%;		
+	}
+    	h1 {
+    		text-align: center;
+    	}
+	.row::after {
+  		content: "";
+  		clear: both;
+  		display: table;
+	}
   </style>
 </head>
-<html>
-	
+	<body>	
+		<div class="row">
+  			<div class="column">
+    				<img class = "nasalogo" src="1200px-NASA_logo.svg.png" alt="Nasa logo">
+  			</div>
+  			<div class="column">
+    				<img class = "amacalogo" src="$_1.JPG" alt="Amaca Logo" >
+  			</div>
+  			<div class="column">
+    				<img class="pinlogo" src="pinnacle_logo_transparan_1__400x400-300x300.png" alt="Pinnacle logo">
+  			</div>
+		</div>
+	</body>
 </html>
-
-<h1>Pumatech Robotics</h1>
-<img class="pinlogo" src="pinnacle_logo_transparan_1__400x400-300x300.png" alt="Pinnacle logo">
